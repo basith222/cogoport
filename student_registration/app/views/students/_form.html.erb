@@ -1,0 +1,29 @@
+
+ 	           <div class="form_validate_container">
+ 	           	<span class="validate_form_header"> Please Register </span>
+ 	           	<label class="name_label"> Tell us your name *</label>
+ 	           	<div class="first_name_container input_box ">
+ 	           		<%= f.text_field :first_name ,:class=>"input_style validate-input alert-validate" ,:placeholder=>"First name"%>
+ 	           	</div>
+ 	            <div class="last_name_container input_box">
+ 	           		<%= f.text_field :last_name , :class=>"input_style" ,:placeholder=>"Last name"%>
+ 	            </div>
+ 	            <label class="name_label"> Enter your email *</label>
+ 	            <div class="email_container input_box_text">
+ 	           		<%= f.text_field :email , :class=>"input_style" ,:placeholder=>"Eg. example@gmail.com"%>
+ 	            </div>
+ 	            <label class="name_label"> Gender </label>
+ 	            <div class="language_container input_box_text">
+ 	           		<%=f.select :gender, options_for_select([ "Male", "Female" ], "Female"),:class=>"input_style"%>
+ 	            </div>
+ 	            <label class="name_label"> Age</label>
+ 	            <div class="language_container input_box_text">
+ 	           		<%=f.select :age, options_for_select(@age),:class=>"input_style"%>
+ 	            </div>
+ 	            <label class="name_label"> Enter phone number</label>
+ 	            <div class="phone_number_container input_box_text">
+ 	           		<%= f.text_field :phone_number , :class=>"input_style",:placeholder=>"Eg. +1800 000000"%>
+ 	            </div>
+ 	            			
+               </div>
+              	

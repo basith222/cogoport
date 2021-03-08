@@ -1,0 +1,9 @@
+<div class="students_filter">
+ <label>Age filter
+  <%=select_tag :age_filter, options_for_select(1..100)%>
+
+</div>
+<div id="all_students" class="all_student_content">
+	<%=render 'student_collection',{students: @students}%>
+
+</div>

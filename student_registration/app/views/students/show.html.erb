@@ -1,0 +1,36 @@
+ 
+ <div class=" row edit_student">
+ 	<div class="all_students" style="float:right;">
+ 		<%= link_to 'get_all_sudents', students_path %>
+    </div>
+ </div>	
+ 
+ <div class"student_full_name">
+ 	<%=Student.full_name(@student)%>
+ </div>
+ 	
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Phone Number</th>
+             <th>Edit student</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><%=@student.first_name%></td>
+            <td><%=@student.last_name%></td>
+            <td><%=@student.email%></td>
+            <td><%=@student.age%></td>
+            <td><%=@student.gender%></td>
+            <td><%=@student.phone_number%></td>
+            <td><%= link_to 'edit', edit_student_url(@student.id) %></td>
+            
+        </tr>
+    </tbody>
+</table>

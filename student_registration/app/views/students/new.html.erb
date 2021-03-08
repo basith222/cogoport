@@ -1,0 +1,15 @@
+<div class="main_container">
+ <div class="inner_container">
+ 	<div class="row" style="width:100%;">
+ 		 <div  class="col-lg-6 main_form"  style="width:100%;">
+            	<%= form_for :student, url: students_path  do |f| %>	
+            <%=render 'form',{f: f}%>
+            <div id="form_send_button" class="send_button-container">
+ 	            	<%= f.submit :value=>"Save" , :class=>"send_button input_style",:placeholder=>"Send Messeage" %>
+ 	            </div>	
+             <%end%>
+               </div>	
+ 		</div>
+ <div>		
+ </div>		
+</div> 
